@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&family=Merriweather:wght@300&display=swap");
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Global Settings */
+
+:root {
+  --font-main: "Karla", sans-serif;
+  --font-serif: "Merriweather", serif;
+  /* --color-main: hsl(73, 12%, 39%); */
+
+  --color-main: hsl(126, 17%, 39%);
+  --color-main-lighter: hsl(126, 17%, 49%);
+  --color-bg: white;
+  --color-main-lightest: hsl(126, 17%, 89%);
+  --accent-color: hsl(305, 14%, 35%);
+  --accent-color-lighter: hsl(305, 34%, 43%);
+
+  --transition: 0.3s ease-in-out all;
+}
+
+a {
+  color: var(--color-main);
+  font-weight: 600;
+  text-decoration: none;
+  width: max-content;
+  height: max-content;
+}
+a:hover,
+a:active {
+  color: var(--color-main-lighter);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Layout */
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-main);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper,
+main {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3em;
+}
+
+header {
+  background-color: var(--color-main);
+  color: white;
+  padding: 0.5em 0;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+  margin: 2.25em auto;
+}
+
+footer {
+  color: var(--color-main);
+  background-color: var(--color-main-lightest);
+}
+
+footer p {
+  margin: 0;
+  line-height: 2;
+}
+
+.footer-content {
+  display: grid;
+  padding: 2em 0;
+}
+
+@media (min-width: 550px) {
+  footer p {
+    line-height: 1.5;
+  }
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer p:last-of-type {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    flex: 1;
+    height: 100%;
+    margin: 3em auto;
+  }
+}
+
+/* HTML Elements */
+
+button {
+  border: none;
+  background-color: var(--color-main);
+  color: white;
+  padding: 0.5em 1.25em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--color-main-lighter);
+}
+
+/* Navbar */
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "logo hamburger"
+    "pages pages";
+  color: white;
+}
+
+nav a {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: inherit;
+  padding: 0.5em 0;
+  font-size: 1.15rem;
+}
+
+nav a:hover,
+av a:active {
+  color: inherit;
+}
+
+.active-nav-link {
+  -webkit-text-stroke: 0.7px white;
+}
+
+.nav-logo {
+  width: 7rem;
+}
+
+.nav-logo-wrapper {
+  grid-area: logo;
+}
+
+.nav-logo-wrapper span {
+  display: none;
+}
+
+.nav-btn {
+  grid-area: hamburger;
+  justify-self: flex-end;
+  align-self: center;
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+
+.nav-btn:hover {
+  background-color: initial;
+  color: inherit;
+}
+
+.nav-links-div {
+  grid-area: pages;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 140px;
+  /* fix this ? */
+}
+
+@media (min-width: 768px) {
+  nav {
+    grid-template-areas: "logo pages";
+  }
+
+  nav .nav-btn {
+    display: none;
+  }
+  .nav-links-div {
+    height: min-content;
+    flex-direction: row;
+    gap: 2em;
+    justify-self: end;
+    align-self: end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-logo-wrapper {
+    display: flex;
+    gap: 1em;
+  }
+  .nav-logo-wrapper span {
+    font-size: 1.35rem;
+    font-weight: 100;
+    display: inline;
+    align-self: end;
+    letter-spacing: -1px;
+  }
+}
+
+/* Home Page */
+
+.home-page {
+  display: grid;
+}
+
+.home-page h4 {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.img-hero {
+  margin-top: 2em;
+}
+
+@media (min-width: 900px) {
+  .home-page {
+    grid-template-rows: min-content auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "text hero"
+      "link hero";
+  }
+
+  .home-page article {
+    grid-area: text;
+  }
+
+  .home-page a {
+    grid-area: link;
+    align-self: end;
+  }
+  .img-hero {
+    grid-area: hero;
+    margin: 0 0 0 3em;
+  }
+}
+
+@media (min-width: 900px) {
+  .home-page h4 {
+    display: none;
+  }
+}
+
+/* Orchard Suite Page */
+
+.suite-page {
+  display: grid;
+}
+
+.img-gallery {
+  margin: 2em 0 0;
+  padding: 0 7px;
+}
+
+@media (min-width: 900px) {
+  .suite-page {
+    grid-template-rows: 9rem auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "text hero"
+      "link hero";
+  }
+
+  .suite-page article {
+    grid-area: text;
+  }
+  .suite-page a {
+    grid-area: link;
+    align-self: start;
+  }
+  .img-gallery {
+    grid-area: hero;
+    margin: 0 0 0 3em;
+    padding: 0;
+  }
+}
+
+/* Contact Page */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-section span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.contact-icons {
+  display: flex;
+  align-self: flex-start;
+  gap: 1.5em;
+}
+
+.contact-icon {
+  background-color: var(--color-main);
+  color: white;
+  padding: 0.35em;
+  border-radius: 5px;
+}
+
+.contact-icon:hover,
+.contact-icon:active {
+  background-color: var(--color-main-lighter);
+}
+
+.contact-img {
+  margin-top: 2em;
+}
+
+.fennel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    width: max-content;
+    margin: 0 auto -11rem;
+    z-index: 1;
+    position: relative;
+    align-items: center;
+  }
+
+  .contact-images {
+    display: flex;
+  }
+
+  .fennel {
+    display: block;
+    width: 100%;
+  }
+}

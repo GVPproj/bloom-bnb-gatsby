@@ -1,0 +1,38 @@
+{
+  "name": "bloom-organic-bnb",
+  "private": true,
+  "description": "Salt Spring Island BnB at Blue Horse Gallery",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^7.2.0",
+    "gatsby": "^5.3.2",
+    "gatsby-cli": "^5.3.1",
+    "gatsby-plugin-image": "^3.3.2",
+    "gatsby-plugin-sharp": "^5.3.2",
+    "gatsby-source-filesystem": "^5.3.1",
+    "gatsby-transformer-sharp": "^5.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GVPproj/bloom-gatsby"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

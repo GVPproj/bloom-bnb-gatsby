@@ -1,0 +1,14 @@
+.page {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 100%;
+}
+
+.page h1 {
+  font-size: 6rem;
+}
+
+.page p {
+  font-size: 2rem;
+}
