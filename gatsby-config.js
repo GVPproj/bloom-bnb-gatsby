@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/bloom-gatsby",
+  pathPrefix: "/bloom-bnb-gatsby",
   siteMetadata: {
     title: "Bloom Organic B&B",
     description: "An organic bed and breakfast on Salt Spring Island",
