@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbloom_organic_bnb=self.webpackChunkbloom_organic_bnb||[]).push([[976],{5379:function(e,n,l){l.r(n);var a=l(7294),t=l(7748);n.default=()=>a.createElement(t.Z,null,a.createElement("main",null,"Testimonial"))}}]);
+//# sourceMappingURL=component---src-pages-testimonials-js-df318ddf7c8b617d6599.js.map
