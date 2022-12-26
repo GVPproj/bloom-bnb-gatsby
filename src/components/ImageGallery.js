@@ -4,7 +4,7 @@ import Gallery from "@browniebroke/gatsby-image-gallery"
 
 const ImageGallery = () => {
   const data = useStaticQuery(graphql`
-    query ImagesForGallery {
+    query PicsForGallery {
       allFile {
         edges {
           node {
@@ -28,6 +28,7 @@ const ImageGallery = () => {
       a.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5) -
       b.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5)
   )
+  // console.log(sortedImages)
 
   return <Gallery rowMargin={-11} mdColWidth={33} images={sortedImages} />
 }
