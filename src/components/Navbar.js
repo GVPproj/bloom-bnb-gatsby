@@ -25,7 +25,7 @@ const Navbar = () => {
         </button>
         <div className={show ? "nav-links-div show-links" : "nav-links-div"}>
           <Link
-            to="/suite"
+            to="/orchard"
             className="nav-link"
             activeClassName="active-nav-link"
           >
