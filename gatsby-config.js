@@ -21,6 +21,9 @@ module.exports = {
       { name: "Brad", age: 50 },
     ],
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
