@@ -29,7 +29,9 @@ const Testimonials = () => {
           alt={testimonialsData[props.id].title}
         />
         <BodyText>{testimonialsData[props.id]["body-text"]}</BodyText>
-        <Author>{testimonialsData[props.id]["guest-name"]}</Author>
+        <Author>
+          <em>{testimonialsData[props.id]["guest-name"]}</em>
+        </Author>
       </Testimonial>
     )
   }
@@ -49,32 +51,32 @@ const Testimonials = () => {
 
 const Cards = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: max-content max-content;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 const Testimonial = styled.article`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1em;
   margin: 1em;
-  background: papayawhip;
+  background: hsl(126, 17%, 89%);
 
   @media (min-width: 768px) {
-    background: mediumseagreen;
+    /* background: mediumseagreen; */
   }
 `
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`
+
 const BodyText = styled.p`
-  color: peachpuff;
+  color: hsl(126, 17%, 39%);
 `
 const Author = styled.p`
-  color: skyblue;
+  color: hsl(126, 17%, 39%);
 `
 
 export default Testimonials
