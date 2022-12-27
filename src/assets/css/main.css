@@ -116,7 +116,7 @@ header {
 main {
   flex: 1;
   height: 100%;
-  margin: 2.25em auto;
+  margin: 2.25em auto 3em;
 }
 
 footer {
