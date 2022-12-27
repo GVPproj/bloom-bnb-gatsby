@@ -8,9 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
 
 module.exports = {
   pathPrefix: "/bloom-bnb-gatsby",

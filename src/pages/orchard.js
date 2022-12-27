@@ -25,7 +25,12 @@ const Orchard = ({ data }) => {
           <button>Book on AirBnB</button>
         </a>
         <div className="img-gallery">
-          <Gallery images={sortedImages} rowMargin={-11} mdColWidth={33} />
+          <Gallery
+            images={sortedImages}
+            rowMargin={-11}
+            colWidth={50}
+            mdColWidth={33}
+          />
         </div>
       </main>
     </Layout>

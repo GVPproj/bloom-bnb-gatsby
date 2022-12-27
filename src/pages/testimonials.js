@@ -19,7 +19,6 @@ const Testimonials = () => {
       }
     }
   `)
-  console.log(imageData)
 
   function TestimonialCard(props) {
     return (
@@ -40,7 +39,7 @@ const Testimonials = () => {
     <Layout>
       <Cards>
         {testimonialsData.map((t, idx) => {
-          return <TestimonialCard key={t} id={idx} />
+          return <TestimonialCard key={t.id} id={idx} />
         })}
       </Cards>
     </Layout>
