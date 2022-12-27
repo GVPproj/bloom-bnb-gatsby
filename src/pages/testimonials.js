@@ -1,39 +1,70 @@
 import React from "react"
 import Layout from "../components/Layout"
 import testimonialsData from "../assets/data/testmionialsData.js"
-import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Testimonials = () => {
-  console.log(testimonialsData[0])
+  const imageData = useStaticQuery(graphql`
+    query TestimonialPics {
+      allFile(skip: 9) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData(width: 500, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `)
+  console.log(imageData)
 
-  function TestimonialCard() {
+  function TestimonialCard(props) {
     return (
       <Testimonial>
-        <Title>{testimonialsData[0].title}</Title>
-        <BodyText>{testimonialsData[0]["body-text"]}</BodyText>
-        <Author>{testimonialsData[0]["guest-name"]}</Author>
+        <GatsbyImage
+          image={getImage(imageData.allFile.edges[props.id].node)}
+          alt={testimonialsData[props.id].title}
+        />
+        <BodyText>{testimonialsData[props.id]["body-text"]}</BodyText>
+        <Author>{testimonialsData[props.id]["guest-name"]}</Author>
       </Testimonial>
     )
   }
 
   return (
     <Layout>
-      <main>
-        <TestimonialCard />
-      </main>
+      <Cards>
+        {testimonialsData.map((t, idx) => {
+          return <TestimonialCard key={t} id={idx} />
+        })}
+      </Cards>
     </Layout>
   )
 }
 
+// Styled Components
+
+const Cards = styled.main`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
+`
+
 const Testimonial = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
   background: papayawhip;
 
   @media (min-width: 768px) {
     background: mediumseagreen;
   }
 `
-
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;

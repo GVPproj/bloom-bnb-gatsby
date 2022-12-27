@@ -49,5 +49,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        ssr: true,
+      },
+    },
   ],
 }
