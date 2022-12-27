@@ -58,7 +58,7 @@ h6 {
 
   --color-main: hsl(126, 17%, 39%);
   --color-main-lighter: hsl(126, 17%, 49%);
-  --color-bg: white;
+  --color-bg: #fff;
   --color-main-lightest: hsl(126, 17%, 89%);
   --accent-color: hsl(305, 14%, 35%);
   --accent-color-lighter: hsl(305, 34%, 43%);
@@ -103,9 +103,13 @@ main {
   padding: 0 3em;
 }
 
+body {
+  background: var(--color-bg);
+}
+
 header {
   background-color: var(--color-main);
-  color: white;
+  color: var(--color-bg);
   padding: 0.5em 0;
 }
 
@@ -156,7 +160,7 @@ footer p {
 button {
   border: none;
   background-color: var(--color-main);
-  color: white;
+  color: var(--color-bg);
   padding: 0.5em 1.25em;
   border-radius: 5px;
   cursor: pointer;
@@ -176,7 +180,7 @@ nav {
   grid-template-areas:
     "logo hamburger"
     "pages pages";
-  color: white;
+  color: var(--color-bg);
 }
 
 nav a {
@@ -193,7 +197,7 @@ av a:active {
 }
 
 .active-nav-link {
-  -webkit-text-stroke: 0.7px white;
+  -webkit-text-stroke: 0.7px var(--color-bg);
 }
 
 .nav-logo {
@@ -367,7 +371,7 @@ av a:active {
 
 .contact-icon {
   background-color: var(--color-main);
-  color: white;
+  color: var(--color-bg);
   padding: 0.35em;
   border-radius: 5px;
 }

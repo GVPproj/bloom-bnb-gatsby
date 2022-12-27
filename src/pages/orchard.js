@@ -5,11 +5,11 @@ import Gallery from "@browniebroke/gatsby-image-gallery"
 
 const Orchard = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp)
-  let sortedImages = images.sort(
-    (a, b) =>
-      a.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5) -
-      b.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5)
-  )
+  //   let sortedImages = images.sort(
+  //     (a, b) =>
+  //       a.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5) -
+  //       b.full.images.fallback.src.charAt(a.full.images.fallback.src.length - 5)
+  //   )
 
   return (
     <Layout>
