@@ -9,3 +9,4 @@ Built with Gatsby JS (and React) & Styled Components.
   - index
   - orchard
   - possibly add .5em top and bottom generally
+- remove Contentful  

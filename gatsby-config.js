@@ -40,14 +40,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images/testimonial-images`,
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `wa8dp4plqg42`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_API_KEY,
-      },
-    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-styled-components`,
