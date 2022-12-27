@@ -323,8 +323,8 @@ av a:active {
 }
 
 .img-gallery {
-  margin: 2em 0 1em;
-  padding: 0 7px 1em;
+  margin: 2em 0 auto;
+  padding: 0 7px auto;
 }
 
 @media (min-width: 900px) {
@@ -406,5 +406,7 @@ av a:active {
 @media (max-width: 768px) {
   .fennel {
     display: none;
+    width: 0;
+    height: 0;
   }
 }
