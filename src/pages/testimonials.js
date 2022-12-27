@@ -4,6 +4,7 @@ import testimonialsData from "../assets/data/testmionialsData.js"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { SEO } from "../components/seo"
 
 const Testimonials = () => {
   const imageData = useStaticQuery(graphql`
@@ -81,3 +82,5 @@ const Author = styled.p`
 `
 
 export default Testimonials
+
+export const Head = () => <SEO />
