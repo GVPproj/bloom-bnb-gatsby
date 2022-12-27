@@ -41,7 +41,7 @@ const Contact = () => {
           />
           <StaticImage
             className="contact-img fennel"
-            src="../assets/images/fennel-last-time053.jpg"
+            src="../assets/images/fennel-clean.jpg"
             alt="Drawing of blossoming fennel"
           />
         </div>

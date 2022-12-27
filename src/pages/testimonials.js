@@ -53,6 +53,7 @@ const Cards = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content max-content;
+  gap: 2em;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -62,10 +63,9 @@ const Cards = styled.main`
 const Testimonial = styled.article`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1em;
-  margin: 1em;
+  padding: 1.5em;
   background: hsl(126, 17%, 89%);
+  border-radius: 0.5em;
 
   @media (min-width: 768px) {
     /* background: mediumseagreen; */
@@ -74,9 +74,11 @@ const Testimonial = styled.article`
 
 const BodyText = styled.p`
   color: hsl(126, 17%, 39%);
+  margin-top: 1.5em;
 `
 const Author = styled.p`
   color: hsl(126, 17%, 39%);
+  margin-top: auto;
 `
 
 export default Testimonials
