@@ -324,7 +324,7 @@ av a:active {
 
 .img-gallery {
   margin: 2em 0 auto;
-  padding: 0 7px 2em;
+  padding: 0 7px 4em;
 }
 
 @media (min-width: 900px) {
