@@ -323,8 +323,8 @@ av a:active {
 }
 
 .img-gallery {
-  margin: 2em 0 0;
-  padding: 0 7px;
+  margin: 2em 0 1em;
+  padding: 0 7px 1em;
 }
 
 @media (min-width: 900px) {
@@ -386,7 +386,8 @@ av a:active {
 }
 
 .fennel {
-  display: none;
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -401,9 +402,9 @@ av a:active {
   .contact-images {
     display: flex;
   }
-
+}
+@media (max-width: 768px) {
   .fennel {
-    display: block;
-    width: 100%;
+    display: none;
   }
 }
