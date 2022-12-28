@@ -13,7 +13,7 @@
 // })
 
 module.exports = {
-  pathPrefix: "/bloom-bnb-gatsby",
+  // pathPrefix: "/bloom-bnb-gatsby",
   siteMetadata: {
     title: "Bloom Organic B&B",
     description: "An organic Bed and Breakfast located on Salt Spring Island",
