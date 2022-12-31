@@ -4,7 +4,7 @@ import testimonialsData from "../assets/data/testmionialsData.js"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { SEO } from "../components/seo"
+import { Seo } from "../components/Seo"
 
 const Testimonials = () => {
   const imageData = useStaticQuery(graphql`
@@ -64,7 +64,7 @@ const Testimonial = styled.article`
   display: flex;
   flex-direction: column;
   padding: 1.5em;
-  background: hsl(126, 17%, 89%);
+  background: hsl(126, 17%, 96%);
   border-radius: 0.5em;
 
   @media (min-width: 768px) {
@@ -83,4 +83,4 @@ const Author = styled.p`
 
 export default Testimonials
 
-export const Head = () => <SEO />
+export const Head = () => <Seo />

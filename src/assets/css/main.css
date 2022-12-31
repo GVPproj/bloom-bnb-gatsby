@@ -60,6 +60,7 @@ h6 {
   --color-main-lighter: hsl(126, 17%, 49%);
   --color-bg: #fff;
   --color-main-lightest: hsl(126, 17%, 89%);
+  --color-main-footer-bg: hsl(126, 17%, 96%);
   --accent-color: hsl(305, 14%, 35%);
   --accent-color-lighter: hsl(305, 34%, 43%);
 
@@ -121,7 +122,7 @@ main {
 
 footer {
   color: var(--color-main);
-  background-color: var(--color-main-lightest);
+  background-color: var(--color-main-footer-bg);
 }
 
 footer p {

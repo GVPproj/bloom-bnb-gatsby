@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { FaAirbnb, FaFacebookF, FaPinterestP } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
-import { SEO } from "../components/seo"
+import { Seo } from "../components/Seo"
 
 const Contact = () => {
   return (
@@ -53,4 +53,4 @@ const Contact = () => {
 
 export default Contact
 
-export const Head = () => <SEO />
+export const Head = () => <Seo />

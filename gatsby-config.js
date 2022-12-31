@@ -49,5 +49,11 @@ module.exports = {
         // ssr: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en",
+      },
+    },
   ],
 }

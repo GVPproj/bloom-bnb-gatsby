@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import Gallery from "@browniebroke/gatsby-image-gallery"
-import { SEO } from "../components/seo"
+import { Seo } from "../components/Seo"
 
 const Orchard = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp)
@@ -59,4 +59,4 @@ export const pageQuery = graphql`
 
 export default Orchard
 
-export const Head = () => <SEO />
+export const Head = () => <Seo />

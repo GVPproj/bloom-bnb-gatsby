@@ -4,6 +4,7 @@ Built with Gatsby JS (and React) & Styled Components.
 
 ## Todo
 
+- aria-labels for buttons
 - CSS Refactor (further styled components implementation)
 - index button same placement as orchard
 

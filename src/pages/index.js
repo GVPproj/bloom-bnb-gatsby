@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
-import { SEO } from "../components/seo"
+import { Seo } from "../components/Seo"
 
 export default function Home() {
   return (
@@ -36,4 +36,4 @@ export default function Home() {
   )
 }
 
-export const Head = () => <SEO />
+export const Head = () => <Seo />
