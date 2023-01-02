@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
-import Seo from "../components/Seo.jsx"
+import { Seo } from "../components/Seo"
 
 export default function Home() {
   return (

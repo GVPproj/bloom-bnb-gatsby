@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import Gallery from "@browniebroke/gatsby-image-gallery"
-import Seo from "../components/Seo.jsx"
+import { Seo } from "../components/Seo"
 
 const Orchard = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp)
