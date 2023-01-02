@@ -4,7 +4,7 @@ import testimonialsData from "../assets/data/testmionialsData.js"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Seo } from "../components/Seo"
+import Seo from "../components/Seo.jsx"
 
 const Testimonials = () => {
   const imageData = useStaticQuery(graphql`

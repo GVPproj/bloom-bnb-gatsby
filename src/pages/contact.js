@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { FaAirbnb, FaFacebookF, FaPinterestP } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
-import { Seo } from "../components/Seo"
+import Seo from "../components/Seo.jsx"
 
 const Contact = () => {
   return (
