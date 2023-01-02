@@ -15,6 +15,7 @@ const Navbar = () => {
         </Link>
 
         <button
+          aria-label="Navigation Menu"
           className="nav-btn"
           onClick={() => {
             setShow(!show)

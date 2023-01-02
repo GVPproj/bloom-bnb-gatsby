@@ -23,13 +23,22 @@ const Contact = () => {
             Canada V8K 1A9
           </p>
           <div className="contact-icons">
-            <a href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy">
+            <a
+              aria-label="Airbnb Link"
+              href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy"
+            >
               <FaAirbnb className="contact-icon" size={32} />
             </a>
-            <a href="http://www.facebook.com/bloomorganic">
+            <a
+              aria-label="Facebook Link"
+              href="http://www.facebook.com/bloomorganic"
+            >
               <FaFacebookF className="contact-icon" size={32} />
             </a>
-            <a href="http://pinterest.com/bluehorsebc/">
+            <a
+              aria-label="Pinterest Link"
+              href="http://pinterest.com/bluehorsebc/"
+            >
               <FaPinterestP className="contact-icon" size={32} />
             </a>
           </div>
