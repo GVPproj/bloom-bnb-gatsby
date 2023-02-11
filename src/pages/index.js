@@ -23,7 +23,11 @@ export default function Home() {
             suite, ‘Orchard’, which is simple, elegant and nourishing.
           </p>
         </article>
-        <a href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy">
+        <a
+          href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Book on AirBnB</button>
         </a>
         <StaticImage

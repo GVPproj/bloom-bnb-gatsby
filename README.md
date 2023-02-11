@@ -5,6 +5,7 @@ Built with Gatsby JS (and React) & Styled Components.
 ## Todo
 
 - CSS Refactor (further styled components implementation)
+- target="_blank" rel="noopener noreferrer" on various links
 - index button same placement as orchard
 
 ## Issues

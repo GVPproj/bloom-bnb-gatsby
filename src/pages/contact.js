@@ -13,7 +13,11 @@ const Contact = () => {
             <span>Bloom Organic B&B</span>
             <br />
             <br />
-            <a href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy">
+            <a
+              href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>Book on AirBnB</button>
             </a>
             <br />
@@ -25,19 +29,25 @@ const Contact = () => {
           <div className="contact-icons">
             <a
               aria-label="Airbnb Link"
-              href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy"
+              href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaAirbnb className="contact-icon" size={32} />
             </a>
             <a
               aria-label="Facebook Link"
               href="http://www.facebook.com/bloomorganic"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaFacebookF className="contact-icon" size={32} />
             </a>
             <a
               aria-label="Pinterest Link"
               href="http://pinterest.com/bluehorsebc/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaPinterestP className="contact-icon" size={32} />
             </a>

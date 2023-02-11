@@ -22,7 +22,11 @@ const Orchard = ({ data }) => {
             and private patio.
           </p>
         </article>
-        <a href="https://www.airbnb.ca/rooms/595036280889281279?preview_for_ml=true&source_impression_id=p3_1648773096_3d7QSntBFe%2BNLDKy">
+        <a
+          href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Book on AirBnB</button>
         </a>
         <div className="img-gallery">
