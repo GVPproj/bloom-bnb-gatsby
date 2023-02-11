@@ -54,13 +54,13 @@ h6 {
 :root {
   --font-main: "Karla", sans-serif;
   --font-serif: "Merriweather", serif;
-  /* --color-main: hsl(73, 12%, 39%); */
+  /* --color-main: 	hsl(145, 13%, 82%); */
 
-  --color-main: hsl(126, 17%, 39%);
-  --color-main-lighter: hsl(126, 17%, 49%);
+  --color-main: hsl(145, 20%, 40%);
+  --color-main-lighter: hsl(145, 20%, 49%);
   --color-bg: #fff;
-  --color-main-lightest: hsl(126, 17%, 89%);
-  --color-main-footer-bg: hsl(126, 17%, 96%);
+  --color-main-lightest: hsl(145, 20%, 89%);
+  --color-main-footer-bg: hsl(145, 20%, 96%);
   --accent-color: hsl(305, 14%, 35%);
   --accent-color-lighter: hsl(305, 34%, 43%);
 
