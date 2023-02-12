@@ -311,7 +311,7 @@ av a:active {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .home-page h4 {
     display: none;
   }
