@@ -13,14 +13,25 @@ const Contact = () => {
             <span>Bloom Organic B&B</span>
             <br />
             <br />
-            <a
-              href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>Book on AirBnB</button>
-            </a>
+            <div className="link-buttons lb-contact">
+              <a
+                href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Book on AirBnB</button>
+              </a>
+              <a
+                href="mailto:bloom@saltspring.com?subject=Booking through the Bloom Website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Book via Email</button>
+              </a>
+            </div>
             <br />
+            <br />
+            <strong>Phone: 250-537-0754</strong> <br />
             <br />
             175 North View Place <br />
             Salt Spring Island, BC <br />

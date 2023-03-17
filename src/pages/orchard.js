@@ -21,14 +21,27 @@ const Orchard = ({ data }) => {
             There is a queen-sized bed and a sitting area opening up to a garden
             and private patio.
           </p>
+          <p>
+            The price is $230.00 per night with a 2 night minimum stay (3 nights
+            on long weekends). A $75.00 cleaning fee is added to your total.
+          </p>
+          <div className="link-buttons">
+            <a
+              href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Book on AirBnB</button>
+            </a>
+            <a
+              href="mailto:bloom@saltspring.com?subject=Booking through the Bloom Website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Book via Email</button>
+            </a>
+          </div>
         </article>
-        <a
-          href="https://www.airbnb.ca/rooms/472025?source_impression_id=p3_1676132789_1dYlOGGTYHTUPEnL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>Book on AirBnB</button>
-        </a>
         <div className="img-gallery">
           <Gallery
             images={sortedImages}
