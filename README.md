@@ -10,13 +10,6 @@ Built with Gatsby JS (and React) & Styled Components.
 
 ## Todo
 
-### Urgent
-
-- phone number in contact
-- prices in index and orchard
-"230 per night, 2 nights minimum, 3 nights on long weekends, 75- cleaning fee"
-- email buttons
-
 - CSS Refactor (further styled components implementation)
 - target="_blank" rel="noopener noreferrer" on various links
 - index button same placement as orchard
