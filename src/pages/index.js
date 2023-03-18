@@ -47,8 +47,14 @@ export default function Home() {
         <StaticImage
           src="../assets/images/suite-photos/suite3.jpg"
           alt="Exterior photo of beautiful suite"
-          className="img-hero"
+          className="img-hero desktop"
         />
+        <div className="img-hero mobile">
+          <StaticImage
+            src="../assets/images/suite-photos/suite3.jpg"
+            alt="Exterior photo of beautiful suite"
+          />
+        </div>
       </main>
     </Layout>
   )

@@ -288,6 +288,14 @@ av a:active {
   margin-top: 2em;
 }
 
+.mobile {
+  display: inline;
+}
+
+.desktop {
+  display: none;
+}
+
 .link-buttons {
   display: flex;
   flex-direction: column;
@@ -317,6 +325,13 @@ av a:active {
   .img-hero {
     grid-area: hero;
     margin: 0 0 0 3em;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
   }
 }
 
