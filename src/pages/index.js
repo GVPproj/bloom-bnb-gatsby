@@ -43,11 +43,13 @@ export default function Home() {
             <button>Book via Email</button>
           </a>
         </div>
-        <StaticImage
-          src="../assets/images/suite-photos/suite3.jpg"
-          alt="Exterior photo of beautiful suite"
-          className="img-hero"
-        />
+        <div>
+          <StaticImage
+            src="../assets/images/suite-photos/suite3.jpg"
+            alt="Exterior photo of beautiful suite"
+            className="img-hero"
+          />
+        </div>
       </main>
     </Layout>
   )
