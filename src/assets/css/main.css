@@ -288,14 +288,6 @@ av a:active {
   margin-top: 2em;
 }
 
-.mobile {
-  display: inline;
-}
-
-.desktop {
-  display: none;
-}
-
 .link-buttons {
   display: flex;
   flex-direction: column;
