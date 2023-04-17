@@ -238,7 +238,7 @@ av a:active {
 }
 
 .show-links {
-  height: 140px;
+  height: 190px;
   /* fix this ? */
 }
 
@@ -428,4 +428,11 @@ av a:active {
     width: 0;
     height: 0;
   }
+}
+
+/* Availability */
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
 }

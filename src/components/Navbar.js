@@ -30,7 +30,14 @@ const Navbar = () => {
             className="nav-link"
             activeClassName="active-nav-link"
           >
-            Orchard Suite
+            Suite
+          </Link>
+          <Link
+            to="/availability"
+            className="nav-link"
+            activeClassName="active-nav-link"
+          >
+            Availability
           </Link>
           <Link
             to="/testimonials"
