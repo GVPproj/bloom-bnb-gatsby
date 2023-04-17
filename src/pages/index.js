@@ -23,8 +23,9 @@ export default function Home() {
             suite, ‘Orchard’, which is simple, elegant and nourishing.
           </p>
           <p>
-            The price is $230.00 per night with a 2 night minimum stay (3 nights
-            on long weekends). A $75.00 cleaning fee is added to your total.
+            The price is $230.00 per night (plus 5% GST & 10% PST) with a 2
+            night minimum stay, 3 nights minimum on long weekends. A $75.00
+            cleaning fee is added to your total.
           </p>
         </article>
         <div className="link-buttons">

@@ -22,8 +22,9 @@ const Orchard = ({ data }) => {
             and private patio.
           </p>
           <p>
-            The price is $230.00 per night with a 2 night minimum stay (3 nights
-            on long weekends). A $75.00 cleaning fee is added to your total.
+            The price is $230.00 per night (plus 5% GST & 10% PST) with a 2
+            night minimum stay, 3 nights minimum on long weekends. A $75.00
+            cleaning fee is added to your total.
           </p>
           <div className="link-buttons">
             <a

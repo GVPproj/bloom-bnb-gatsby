@@ -318,6 +318,13 @@ av a:active {
     grid-area: hero;
     margin: 0 0 0 3em;
   }
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
 }
 
 @media (min-width: 1024px) {
